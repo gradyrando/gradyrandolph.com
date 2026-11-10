@@ -1,0 +1,13 @@
+title: "Grady Randolph"
+description: "The personal website of Grady Randolph."
+url: "https://gradyrandolph.com"
+baseurl: ""
+
+markdown: kramdown
+permalink: /blog/:year/:month/:day/:title/
+
+# RSS plugin intentionally disabled for now.
+# plugins:
+#   - jekyll-feed
+
+# GitHub Pages builds this site from the repository root.

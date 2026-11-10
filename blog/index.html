@@ -1,41 +1,16 @@
+---
+layout: default
+title: Blog
+permalink: /blog/
+---
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Blog | Grady Randolph</title>
-    <link rel="stylesheet" href="../css/style.css">
-</head>
-<body>
-    <header>
-        <h1>Grady Randolph</h1>
+<h2>Blog</h2>
 
-        <nav>
-            <a href="../index.html">Home</a>
-            <a href="../about.html">About</a>
-            <a href="index.html">Blog</a>
-        </nav>
-    </header>
-
-    <main>
-        <h2>Blog</h2>
-
-        <article>
-            <h3>
-                <a href="test.html">
-                    Test
-                </a>
-            </h3>
-
-            <p><time datetime="2026-11-04">November 4, 2026</time></p>
-
-            <p>
-                A test.
-            </p>
-        </article>
-
-    </main>
-
-</body>
-</html>
+{% for post in site.posts %}
+  <article class="post-summary">
+    <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
+    <p class="post-date"><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%B %-d, %Y" }}</time></p>
+    {{ post.excerpt }}
+    <p><a href="{{ post.url | relative_url }}">Read post</a></p>
+  </article>
+{% endfor %}

@@ -1,0 +1,18 @@
+<section class="newsletter">
+  <h2>Get new posts by email</h2>
+  <p>Occasional notes when I publish something new.</p>
+  <!-- Replace YOUR_BUTTONDOWN_USERNAME with your Buttondown username. -->
+  <form
+    action="https://buttondown.com/api/emails/embed-subscribe/YOUR_BUTTONDOWN_USERNAME"
+    method="post"
+    target="popupwindow"
+    onsubmit="window.open('https://buttondown.com/YOUR_BUTTONDOWN_USERNAME', 'popupwindow')"
+    class="newsletter-form"
+  >
+    <label for="newsletter-email">Email address</label>
+    <div class="newsletter-controls">
+      <input id="newsletter-email" type="email" name="email" placeholder="you@example.com" required>
+      <input type="submit" value="Subscribe">
+    </div>
+  </form>
+</section>

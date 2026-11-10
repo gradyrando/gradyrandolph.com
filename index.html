@@ -1,39 +1,22 @@
+---
+layout: default
+title: Home
+---
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Grady Randolph</title>
-    <meta name="description" content="The personal website of Grady Randolph.">
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-    <header>
-        <h1>Grady Randolph</h1>
+<img src="{{ '/assets/images/gradyswinging.jpeg' | relative_url }}"
+     alt="A photo of Grady on a swing"
+     class="profile-photo">
 
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="about.html">About</a>
-            <a href="blog/index.html">Blog</a>
-        </nav>
-    </header>
+<h2>Posts</h2>
 
-    <main>
-        <p>
-            Hi I'm Grady, good to see you!
-        </p>
-
-        <h2>Posts</h2>
-
-        <ul>
-            <li>
-                <a href="blog/test.html">
-                    Test
-                </a>
-            </li>
-        </ul>
-    </main>
-
-</body>
-</html>
+<ul class="post-list">
+  {% for post in site.posts %}
+    <li>
+      <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+      <span class="post-date">— {{ post.date | date: "%B %-d, %Y" }}</span>
+      {% if post.excerpt %}
+        <div class="post-excerpt">{{ post.excerpt | strip_html | truncate: 180 }}</div>
+      {% endif %}
+    </li>
+  {% endfor %}
+</ul>
