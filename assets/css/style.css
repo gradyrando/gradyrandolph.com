@@ -120,53 +120,66 @@ article h3 {
   margin-left: auto;
 }
 
-.newsletter {
-  margin-top: 48px;
-  padding-top: 22px;
-}
-
-.newsletter h2 {
-  margin-bottom: 4px;
-}
-
-.newsletter p {
+.newsletter-signup h2 {
   margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+
+.newsletter-signup p {
+  margin-bottom: 1.25rem;
 }
 
 .newsletter-form label {
   display: block;
-  margin-bottom: 6px;
+  margin-bottom: 0.5rem;
   font-size: 0.9rem;
 }
 
-.newsletter-controls {
+.newsletter-form-fields {
   display: flex;
-  gap: 8px;
-  flex-wrap: wrap;
+  gap: 0.5rem;
 }
 
-.newsletter input[type="email"] {
+.newsletter-form input[type="email"] {
+  flex: 1;
   min-width: 0;
-  padding: 9px 10px;
-  border: 1px solid #aaa;
-  border-radius: 3px;
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
   font: inherit;
 }
 
-.newsletter input[type="submit"] {
-  padding: 9px 14px;
-  border: 1px solid #245b8f;
-  border-radius: 3px;
-  background: #245b8f;
+.newsletter-form button {
+  padding: 0.75rem 1.25rem;
+  border: none;
+  border-radius: 4px;
+  background: #333;
   color: white;
   font: inherit;
   cursor: pointer;
+}
+
+.newsletter-form button:hover {
+  background: #555;
+}
+
+.newsletter-signup .newsletter-note {
+  margin-top: 0.75rem;
+  margin-bottom: 0;
+  font-size: 0.85rem;
+  color: #777;
 }
 
 .site-footer {
   padding-top: 15px;
   font-size: 14px;
   color: #666;
+}
+
+@media (max-width: 480px) {
+  .newsletter-form-fields {
+    flex-direction: column;
+  }
 }
 
 @media (max-width: 700px) {
