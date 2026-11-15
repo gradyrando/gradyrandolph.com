@@ -58,6 +58,31 @@ article h3 {
   margin-bottom: 5px;
 }
 
+figure.image {
+  margin: 2rem auto;       /* Adds vertical spacing and centers the block */
+  max-width: 100%;           /* Prevents the figure from overflowing mobile screens */
+  text-align: center;        /* Centers both the image and caption */
+}
+
+figure.image img {
+  display: block;
+  max-width: 100%;           /* Scales image down to fit mobile viewports */
+  max-height: 70vh;          /* Prevents tall portrait images from taking over the screen */
+  width: auto;               /* Keeps small images from stretching and pixelating */
+  height: auto;              /* Preserves the original aspect ratio */
+  margin: 0 auto;            /* Centers the image inside the figure */
+  border-radius: 6px;        /* Optional: subtle rounded corners */
+}
+
+figure.image figcaption {
+  margin-top: 0.6rem;        /* Space between image and caption */
+  font-size: 0.9rem;         /* Slightly smaller than body text */
+  font-style: italic;
+  color: #666;               /* Muted gray for visual hierarchy */
+  line-height: 1.4;
+}
+
+
 .post-date,
 .nav-label {
   color: #666;
