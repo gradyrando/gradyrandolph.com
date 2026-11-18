@@ -1,5 +1,5 @@
 <figure class="image">
-	<img src="{{ include.url | relative_url }}" alt="{{ include.alt | default: include.caption }}">
+	<img src="{{ include.url | relative_url }}" alt="{{ include.alt | default: include.caption }}" class="{% if include.no_max_height %}no-max-height{% endif %}">
 	{% if include.caption %}
 		<figcaption>{{ include.caption }}</figcaption>
 	{% endif %}
