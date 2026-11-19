@@ -30,7 +30,7 @@ I was happy with this result. I also drew a fair bit of foliage in ink this summ
 
 {% include image.html url="/assets/images/YParkingLot.jpeg" caption="" alt="painting of trees with grass in foreground" %}
 
-I was really happy with this one! It successfully captures the harsh high summer feel I wanted and it's very background-y. I was feeling confident so I decided to go on to a more ambitious paint. Spoiler, that one would fail. I set myself up for failure first by choosing a bad reference photo:
+I was really happy with this one! It successfully captures the harsh high summer feel I wanted and it's very background-y. I was feeling confident so I decided to go on to a more ambitious painting. Spoiler: that one would fail. I set myself up for failure first by choosing a bad reference photo:
 
 {% include image.html url="/assets/images/TGPReference.jpeg" caption="" alt="small stream surrounded by lush vegetation" %}
 
